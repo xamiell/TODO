@@ -39,7 +39,9 @@
         <Button Text="Add New Task" 
                 Margin="20"
                 FontFamily="GoogleSans" 
-                Font="Bold">
+                Font="Bold"
+                BackgroundColor="#EAA06A"
+                TextColor="White">
             <Button.BorderRadius>
                 <OnPlatform x:TypeArguments="x:Int32"
                               iOS     ="11"
