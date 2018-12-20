@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TODO"
+             x:Class="TODO.Views.HomePage"
+             BackgroundColor="#F7F7F7"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand"
+                     Margin="20">
+            <Label Text="Tasks"
+                   TextColor="#363636"
+                   FontFamily="GoogleSans"
+                   Font="Bold"
+                   FontSize="32"/>
+
+            <controls:CircleImage x:Name="imageProfile"
+                                  Aspect="AspectFit" 
+                                  HorizontalOptions="EndAndExpand">
+                <controls:CircleImage.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android, iOS">38</On>
+                    </OnPlatform>
+                </controls:CircleImage.WidthRequest>
+                <controls:CircleImage.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android, iOS">38</On>
+                    </OnPlatform>
+                </controls:CircleImage.HeightRequest>
+            </controls:CircleImage>
+        </StackLayout>
+
+        <ListView>
+
+        </ListView>
+
+        <Button Text="Add New Task" 
+                Margin="20"
+                FontFamily="GoogleSans" 
+                Font="Bold"
+                BackgroundColor="#EAA06A"
+                TextColor="White">
+            <Button.BorderRadius>
+                <OnPlatform x:TypeArguments="x:Int32"
+                              iOS     ="11"
+                              Android ="9"/>
+            </Button.BorderRadius>
+        </Button>
+    </StackLayout>
+</ContentPage>

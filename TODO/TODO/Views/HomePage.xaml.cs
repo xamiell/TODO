@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace TODO
+namespace TODO.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public MainPage()
+        public HomePage()
         {
             InitializeComponent();
+
+            imageProfile.Source = "http://nyarafashion.com/images/profile-picture-big.jpg";
         }
     }
 }
