@@ -21,12 +21,12 @@
                                   HorizontalOptions="EndAndExpand">
                 <controls:CircleImage.WidthRequest>
                     <OnPlatform x:TypeArguments="x:Double">
-                        <On Platform="Android, iOS">34</On>
+                        <On Platform="Android, iOS">38</On>
                     </OnPlatform>
                 </controls:CircleImage.WidthRequest>
                 <controls:CircleImage.HeightRequest>
                     <OnPlatform x:TypeArguments="x:Double">
-                        <On Platform="Android, iOS">34</On>
+                        <On Platform="Android, iOS">38</On>
                     </OnPlatform>
                 </controls:CircleImage.HeightRequest>
             </controls:CircleImage>
