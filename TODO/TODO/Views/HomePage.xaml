@@ -36,8 +36,8 @@
 
         </ListView>
 
-        <Button Text="Add new task" 
-                Margin="20" 
+        <Button Text="Add New Task" 
+                Margin="20"
                 FontFamily="GoogleSans" 
                 Font="Bold">
             <Button.BorderRadius>
