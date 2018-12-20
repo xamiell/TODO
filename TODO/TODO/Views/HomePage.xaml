@@ -31,6 +31,20 @@
                 </controls:CircleImage.HeightRequest>
             </controls:CircleImage>
         </StackLayout>
-    </StackLayout>
 
+        <ListView>
+
+        </ListView>
+
+        <Button Text="Add new task" 
+                Margin="20" 
+                FontFamily="GoogleSans" 
+                Font="Bold">
+            <Button.BorderRadius>
+                <OnPlatform x:TypeArguments="x:Int32"
+                              iOS     ="11"
+                              Android ="9"/>
+            </Button.BorderRadius>
+        </Button>
+    </StackLayout>
 </ContentPage>
