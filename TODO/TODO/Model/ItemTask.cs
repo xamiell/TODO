@@ -6,9 +6,10 @@ using SQLite;
 
 namespace TODO.Model
 {
+    [Table("Tasks")]
     public class ItemTask
     {
-        [AutoIncrement, PrimaryKey]
+        [AutoIncrement, PrimaryKey, Column("id")]
         public int Id { get; set; }
         public string Title { get; set; }
         public string Date { get; set; }
