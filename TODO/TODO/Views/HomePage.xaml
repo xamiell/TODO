@@ -66,7 +66,7 @@
                                            TextColor="#919191"/>
                                     </StackLayout>
                                 </StackLayout>
-                                <Switch VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+                                <CheckBox VerticalOptions="Center" HorizontalOptions="EndAndExpand" IsChecked="{x:Binding IsCompleted}"/>
                             </StackLayout>
                         </Frame>
                     </ViewCell>
