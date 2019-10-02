@@ -33,7 +33,8 @@
             </controls:CircleImage>
         </StackLayout>
 
-        <ListView SelectionMode="None" x:Name="list" HasUnevenRows="True" SeparatorVisibility="None">
+        <ListView SelectionMode="None" x:Name="list" HasUnevenRows="True" SeparatorVisibility="None"
+                  ItemsSource="{Binding TaskCollection}">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="model:ItemTask">
                     <ViewCell>
@@ -78,6 +79,7 @@
                 Margin="16,0,16,16"
                 FontFamily="GoogleSans" 
                 Font="Bold"
+                Command="{Binding AddTaskCommand}"
                 BackgroundColor="#EAA06A"
                 TextColor="White"
                 VerticalOptions="EndAndExpand"
