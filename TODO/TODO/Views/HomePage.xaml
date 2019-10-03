@@ -10,7 +10,7 @@
     <StackLayout Orientation="Vertical" Margin="0,0,0,5">
         <StackLayout Orientation="Horizontal"
                      HorizontalOptions="FillAndExpand"
-                     Margin="20,20,20,10">
+                     Margin="20,20,20,1">
             <Label Text="Tasks"
                    TextColor="#363636"
                    FontFamily="GoogleSans"
@@ -76,7 +76,7 @@
 
         <Button Text="Add New Task"
                 x:Name="button"
-                Margin="16,0,16,16"
+                Margin="10,5,10,5"
                 FontFamily="GoogleSans" 
                 Font="Bold"
                 Clicked="button_Clicked"
