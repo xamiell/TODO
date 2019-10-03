@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TODO.Views.DataEntryPage">
+    <ContentPage.Resources>
+        <Style TargetType="Button" x:Key="buttonStyle">
+            <Setter Property="BackgroundColor" Value="#EAA06A"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="FontFamily" Value="GoogleSans"/>
+        </Style>
+        <Style TargetType="Entry" x:Key="entryStaticStyle">
+            <Setter Property="FontFamily" Value="GoogleSans"/>
+            <Setter Property="TextColor" Value="#EAA06A"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="New task" 
+                   FontSize="Title"
+                   TextColor="#363636"
+                   Margin="10" 
+                   FontFamily="GoogleSans"/>
+            <Entry Placeholder="Title task"
+                   Style="{StaticResource entryStaticStyle}"
+                   Text="{Binding TaskTitle}"/>
+            <Entry Placeholder="Description task"
+                   Text="{Binding TaskDescription}"
+                   Style="{StaticResource entryStaticStyle}"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="End"
+                         Margin="10">
+                <Button Text="Cancel" 
+                        Command="{Binding CancelCommand}"
+                        Style="{StaticResource buttonStyle}"/>
+                <Button Text="Save" 
+                        Command="{Binding SaveCommand}"
+                        IsEnabled="{Binding IsSaveButtonEnabled}"
+                        Style="{StaticResource buttonStyle}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
