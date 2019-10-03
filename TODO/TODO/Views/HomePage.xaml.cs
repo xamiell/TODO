@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using TODO.ViewModels;
 
 namespace TODO.Views
 {
@@ -13,7 +15,13 @@ namespace TODO.Views
         {
             InitializeComponent();
 
+            BindingContext = new HomeViewModel();
             imageProfile.Source = "http://nyarafashion.com/images/profile-picture-big.jpg";
+        }
+
+        private void button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new DataEntryPage());
         }
     }
 }
