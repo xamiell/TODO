@@ -79,7 +79,7 @@
                 Margin="16,0,16,16"
                 FontFamily="GoogleSans" 
                 Font="Bold"
-                Command="{Binding AddTaskCommand}"
+                Clicked="button_Clicked"
                 BackgroundColor="#EAA06A"
                 TextColor="White"
                 VerticalOptions="EndAndExpand"

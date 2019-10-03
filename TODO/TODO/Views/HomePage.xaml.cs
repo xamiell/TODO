@@ -18,5 +18,10 @@ namespace TODO.Views
             BindingContext = new HomeViewModel();
             imageProfile.Source = "http://nyarafashion.com/images/profile-picture-big.jpg";
         }
+
+        private void button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new DataEntryPage());
+        }
     }
 }
